@@ -51,3 +51,8 @@ select {
 body {
     min-height: 100vh;
 }
+
+a[class] {
+    text-decoration: none;
+    color: inherit;
+}
