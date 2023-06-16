@@ -395,7 +395,30 @@
 
 
 
+.articles {
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .articles__title {}
+
+    .articles__preload {}
+
+    .articles__box {}
+
+    .articles__item {}
+
+    .articles__img {}
+
+    .articles__news {}
+
+    .articles__desc {}
+
+    .articles__date {}
+
+    .articles__author {}
+}
 
 @import 'media';
