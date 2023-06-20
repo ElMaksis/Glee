@@ -384,6 +384,108 @@
 }
 
 
+// =======================  BLOCK PRODUCTS  ========================
+
+
+.products {
+
+    &__inner {
+        padding: 70px 0 40px;
+    }
+
+    &__title {
+        padding-bottom: 30px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 29px;
+        background-color: #fafafa;
+        padding: 20px 0;
+    }
+}
+
+.product-item {
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    flex-basis: 270px;
+    padding: 30px 15px;
+    height: 380px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    overflow: hidden;
+
+    &__img {
+        height: 40%;
+        object-fit: cover;
+    }
+
+    &__desc {
+        margin-top: 60px;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    &__title {
+        @extend %dmsans-400;
+        color: #243f4d;
+        font-weight: 600;
+    }
+
+    &__price {
+        @extend %dmsans-700;
+        color: #c8d6de;
+    }
+
+    &__link-box {
+        position: absolute;
+        top: 180px;
+        display: flex;
+        gap: 15px;
+        transform: translateY(500%);
+
+        span {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        span:hover {
+            background-color: #a3bbc8;
+
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .product-item__link-box {
+            transform: translateY(0);
+        }
+    }
+}
+
+
 // ========================  RANDOM_GOODS  =========================
 
 
@@ -515,7 +617,6 @@
 // ==========================  VIDEO  ============================
 
 .video {
-    background-image: url('../images/content/video.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
