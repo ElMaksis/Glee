@@ -17,7 +17,35 @@ body {
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wide-container {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.tabs-container {
+    font-size: 16px;
+    color: #8b8b8b;
+    text-align: center;
+
+    & span {
+        margin: 0 13px;
+        cursor: pointer;
+    }
+
+    & .tab-active {
+        color: #1a1a1a;
+    }
 }
