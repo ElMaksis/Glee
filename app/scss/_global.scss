@@ -72,6 +72,14 @@ body {
             }
         }
     }
+
+    &__link {
+        transition: all .3s;
+
+        &:hover {
+            color: #234969;
+        }
+    }
 }
 
 .title {
