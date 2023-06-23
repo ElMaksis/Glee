@@ -28,6 +28,52 @@ body {
     padding: 0 15px;
 }
 
+.top {
+    height: 125px;
+    width: 100%;
+    background-color: #edf1f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        @extend %rubik-300;
+        font-size: 36px;
+        line-height: 24px;
+        color: #222933;
+    }
+}
+
+.breadcrumbs {
+    padding-top: 10px;
+
+    &__list {
+        display: flex;
+        font-size: 14px;
+        line-height: 24px;
+        color: #9a9ea2;
+        @extend %rubik-400;
+    }
+
+    &__item {
+        padding-right: 8px;
+
+        &:after {
+            content: "/";
+            padding-left: 6px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
 .title {
     @extend %dmsans-700;
     font-size: 36px;

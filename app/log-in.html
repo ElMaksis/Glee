@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -62,17 +62,58 @@
 
     <main class="main">
         <section class="top">
-            <h2 class="top__title"></h2>
+            <h2 class="top__title">Log in</h2>
             <div class="breadcrumbs">
                 <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"></a>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__link" href="#"></span>
+                        <span class="breadcrumbs__link" href="#">Log in</span>
                     </li>
                 </ul>
             </div>
         </section>
+        <div class="log-in">
+            <form class="log-in__form" action="#">
+                <label class="log-in__label">
+                    <p>Username or email address *</p>
+                    <input class="log-in__input" type="text" required>
+                </label>
+                <label class="log-in__label">
+                    <p>Password *</p>
+                    <input class="log-in__input" type="password" required>
+                </label>
+                <button class="log-in__btn" type="submit">Login</button>
+                <div class="log-in__password">
+                    <label class="log-in__label">
+                        <input class="log-in__remember" type="checkbox" name="remeber">
+                        Remember me
+                    </label>
+                    <a class="log-in__link" href="#">Lost your password?</a>
+                </div>
+            </form>
+            <div class="register">
+                <a class="register__link" href="#">Not registered? No problem</a>
+                <button class="register__account" href="#">Create an account</button>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="cotainer">
+                <div class="login-partners__inner">
+                    <img class="partners__logo" src="images/content/partners/logo_partner-1.png" alt="partners logo"
+                        href="#">
+                    <img class="partners__logo" src="images/content/partners/logo_partner-2.png" alt="partners logo"
+                        href="#">
+                    <img class="partners__logo" src="images/content/partners/logo_partner-3.png" alt="partners logo"
+                        href="#">
+                    <img class="partners__logo" src="images/content/partners/logo_partner-4.png" alt="partners logo"
+                        href="#">
+                    <img class="partners__logo" src="images/content/partners/logo_partner-5.png" alt="partners logo"
+                        href="#">
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
