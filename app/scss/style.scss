@@ -298,8 +298,9 @@
 
     &__account {
         margin-top: 25px;
+        padding: 14px 0;
         width: 100%;
-        height: 60px;
+        text-align: center;
         border: 1px solid #a3bbc8;
         @extend %rubik-500;
         color: #243f4d;
@@ -323,6 +324,11 @@
             box-shadow: 1px 1px 3px gray;
         }
     }
+}
+
+.register__link:hover,
+.log-in__link:hover {
+    color: #a3bbc8;
 }
 
 .login-partners__inner {
@@ -353,6 +359,235 @@
         padding: 0 0 20px 10px;
     }
 }
+
+
+// ===================  EXPERIENCE  ===================
+
+
+.experience {
+    padding-top: 120px;
+
+    &__inner {
+        background-image: url('../images/content/about.jpg');
+        background-position: left top;
+        background-size: 45%;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        padding: 50px 20px 80px 50px;
+        margin-left: 45%;
+    }
+
+    &__year {
+        display: flex;
+    }
+
+    &__img {
+        max-height: 100px;
+    }
+
+    &__rows {
+        margin: 18px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @extend %rubik-400;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 32px;
+        padding: 30px 0 40px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #e6eaf0;
+    }
+
+    &__nums {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 1 33%;
+        background-position: 20px 10px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        padding-left: 80px;
+    }
+
+    &__item+&__item {
+        border-left: 1px solid #e6eaf0;
+    }
+
+    &__amount {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    &__desc {
+        color: #4c4c4c;
+    }
+}
+
+
+// ===================  STATISTIC  ====================
+
+
+.statistic {
+    min-height: 320px;
+    width: 100%;
+    background-color: #fcd7b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 1 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 30px;
+    }
+
+    &__img {
+        height: 60px;
+        padding-bottom: 20px;
+    }
+
+    &__num {
+        font-size: 36px;
+        line-height: 32px;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+
+//====================  TEAM  ========================
+
+
+.team {
+    padding-top: 120px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__desc {
+        flex: 0 0 400px;
+        color: #243f4d;
+    }
+
+    &__title {
+        text-align: left;
+        padding: 6px 0 30px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        padding-bottom: 30px;
+        max-width: 300px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 0px 20px;
+        background-color: #a3bbc8;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 55px;
+        position: relative;
+        top: 0;
+        transition: all .3s;
+
+        span+span {
+            padding-left: 16px;
+        }
+
+        &:hover {
+            background-color: #7d9cad;
+            top: -2px;
+            box-shadow: 2px 2px 5px gray;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: #64879a;
+            top: 0px;
+            box-shadow: 1px 1px 3px gray;
+        }
+    }
+
+    &__albom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+}
+
+.team-item {
+    flex: 0 1 47%;
+
+    &__photo {
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+        padding: 26px 0 16px;
+    }
+
+    &__text {
+        color: #565872;
+        padding-right: 50px;
+    }
+
+    &__desc {
+        width: 325px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #fff;
+        position: relative;
+        top: -50px;
+
+    }
+
+    &__name {
+        width: 225px;
+        padding-left: 25px;
+    }
+
+    &__link {
+        margin-right: 30px;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+
+}
+
+
+
 
 
 // ===================  SLIDER  =======================
@@ -581,6 +816,7 @@
     border-radius: 10px;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     overflow: hidden;
+    transition: all .3s;
 
     &__img {
         height: 40%;
@@ -639,11 +875,10 @@
     }
 
     &:hover {
-
+        box-shadow: 5px 5px 15px #d1cfcf;
 
         .product-item__link-box {
             transform: translateY(0);
-
         }
     }
 }
@@ -878,7 +1113,9 @@
     &__inner {
         margin-top: -244px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 50px;
         padding: 340px 0 85px;
     }
 }
