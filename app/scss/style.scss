@@ -1127,10 +1127,11 @@
 
 
 .shop {
-    padding: 115px 0 120px;
+    padding-top: 115px;
 
     &__inner {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__filters {
@@ -1160,35 +1161,30 @@
         }
     }
 
-    &__list-item {
+    &__label {
         @extend %rubik-400;
         line-height: 43px;
-        padding: 0 22px 0 15px;
-        border-radius: 6px;
         transition: all .3s;
+        cursor: pointer;
 
         &:hover {
-            font-size: large;
-        }
-
-        &--active {
-            background-color: #edf3f4;
-
-            & .filter-brand__amount {
-                color: #243f4d;
-            }
+            color: #056599;
         }
     }
-}
 
-.filter-category__link {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__checkbox {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 22px 0 15px;
+        border-radius: 6px;
+    }
 
-    &:after {
-        content: ">";
+    &__input {
+        @extend %input-hidden;
+
+        &:checked+.filter__checkbox {
+            background-color: #edf1f4;
+        }
     }
 }
 
@@ -1238,16 +1234,81 @@
     display: none;
 }
 
-.filter-brand {
-    &__link {
-        width: 100%;
+.filter-recent {
+    &__item {
         display: flex;
-        justify-content: space-between;
+        min-height: 70px;
+        margin-bottom: 25px;
+    }
+
+    &__picture {
+        width: 70px;
+        border: 1px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    &__amount {
-        color: #b3b3b3;
+    &__desc {
+        padding-left: 18px;
+        @extend %rubik-400;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    &__title {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    &__ratio {
+        padding: 12px 0;
+    }
+}
+
+.shop__content {
+    // background-color: #fafafa;
+    flex-basis: calc(100% - 290px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+
+.pagination {
+    flex: 0 0 100%;
+    max-height: 270px;
+    padding: 90px 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 7px;
+        border: 1px solid #a3bbc8;
+        line-height: 50px;
+        text-align: center;
+        @extend %rubik-400;
+        transition: all .2s;
+
+        &:hover {
+            border: 2px solid #a3bbc8;
+        }
+
+        &--active {
+            background-color: #a3bbc8;
+            color: #fff;
+        }
     }
 }
 
