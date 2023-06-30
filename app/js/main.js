@@ -1,5 +1,5 @@
 $(function () {
-    $('.filter-recent__ratio').rateYo({
+    $('.ratio').rateYo({
         starWidth: "12px",
         normalFill: "#d6d6d6",
         retedFill: "#ffcc00"
