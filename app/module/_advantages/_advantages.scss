@@ -49,3 +49,29 @@
         color: #585858;
     }
 }
+
+@media (max-width: 950px) {
+    .advantages__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advantages__item {
+        width: 50%;
+        padding: 30px 20px 30px 16%;
+        background-position: 10% 65px;
+    }
+
+    .advantages__inner .advantages__item-secure {
+        border-left: none;
+    }
+}
+
+@media (max-width: 515px) {
+    .advantages__item {
+        width: 100%;
+        border-left: none;
+        background-position: 10px 65px;
+        padding: 20px 0 20px 22%;
+    }
+}

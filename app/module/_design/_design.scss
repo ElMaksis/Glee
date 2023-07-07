@@ -58,3 +58,13 @@
         color: #a9bfcb;
     }
 }
+
+@media (max-width: 515px) {
+    .design__inner {
+        padding: 60px 0;
+    }
+
+    .design-item {
+        flex: 0 0 330px;
+    }
+}

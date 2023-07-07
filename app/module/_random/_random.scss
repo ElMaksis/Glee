@@ -71,3 +71,43 @@
         }
     }
 }
+
+@media (max-width: 1070px) {
+    .random-goods__img {
+        height: 50%;
+        margin-top: 0;
+    }
+
+    .random-goods__item {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 770px) {
+    .random-goods__inner {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .random-goods__img {
+        max-height: 250px;
+    }
+
+    .random-goods__content {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .random-goods__inner {
+        margin-top: 30px;
+    }
+
+    .random-goods__img {
+        display: none;
+    }
+
+    .random-goods__title {
+        font-size: 22px;
+    }
+}

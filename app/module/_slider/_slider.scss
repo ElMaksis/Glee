@@ -123,3 +123,46 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) {
+    .slider__item-wrapper {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .slider__item .slider__img {
+        display: none;
+    }
+
+    .slider__item-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 660px) {
+    .slider__item-wrapper {
+        min-height: 450px;
+    }
+
+    .slider__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .slider__sub-title {
+        margin: 15px 0;
+    }
+
+    .slider__item-content {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider__title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

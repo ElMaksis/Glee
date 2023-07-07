@@ -64,4 +64,9 @@ $(function () {
         $($(this).attr('href')).addClass('product-one__content-item--active');
     });
 
+    $('.user-nav__menu-btn').on('click', function () {
+        $('.menu').toggleClass('menu--active');
+        $('.user-nav').toggleClass('user-nav--active');
+    });
+
 });
