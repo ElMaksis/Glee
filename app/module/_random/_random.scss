@@ -1,0 +1,73 @@
+.random-goods {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 130px;
+    }
+
+    &__item {
+        background-color: #feefe2;
+        flex: 0 1 50%;
+        max-height: 390px;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        height: 100%;
+        margin-top: -150px;
+    }
+
+    &__content {
+        padding: 100px 20px;
+        max-width: 360px;
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 32px;
+        color: #243f4d;
+    }
+
+    &__desc {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #5e6e75;
+        padding: 20px 0 30px;
+    }
+
+    &__link {
+        @extend %rubik-400;
+        padding: 22px 18px;
+        color: #436372;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 12px;
+        position: relative;
+        top: 0;
+        transition: all .3s;
+
+
+        span+span {
+            padding-left: 40px;
+            font-size: 20px;
+        }
+
+        &:hover {
+            background-color: #fcd7b6;
+            top: -2px;
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        &:active {
+            top: 2px;
+            box-shadow: 1px 1px 3px gray;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.breadcrumbs {
+    padding-top: 10px;
+
+    &__list {
+        display: flex;
+        font-size: 14px;
+        line-height: 24px;
+        color: #9a9ea2;
+        @extend %rubik-400;
+    }
+
+    &__item {
+        padding-right: 8px;
+
+        &:after {
+            content: "/";
+            padding-left: 6px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        transition: all .3s;
+
+        &:hover {
+            color: #234969;
+        }
+    }
+}

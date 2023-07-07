@@ -1,0 +1,93 @@
+.header {
+    @extend %rubik-500;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 0 45px;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        font-size: 15px;
+        line-height: 12px;
+    }
+
+    &__item+&__item {
+        margin-left: 35px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #436372;
+        transition: all .3s;
+
+        &:hover {
+            color: #6e9cb2;
+            font-size: 17px;
+        }
+    }
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__box {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding: 9px 40px;
+        border-radius: 25px;
+        background-color: #fcd7b6;
+    }
+
+    &__link {
+        position: relative;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__fav-num,
+    &__cart-num {
+        position: absolute;
+        top: -9px;
+        right: -10px;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 16px;
+        color: #436372;
+        transition: all .3s;
+    }
+
+    &__col {
+        width: 1px;
+        height: 32px;
+        background-color: #fde7d3;
+    }
+
+    &__search-icon,
+    &__menu-btn {
+        padding: 16px;
+        border-radius: 50%;
+        background-color: #edf1f4;
+    }
+
+    &__menu-btn {
+        background-color: #a3bbc8;
+        overflow: visible;
+    }
+
+}
