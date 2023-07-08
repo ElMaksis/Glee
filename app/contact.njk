@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+        <section class="top">
+            <h2 class="top__title">
+                Contact
+            </h2>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__dest" href="#">Contact</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <h6 class="contact__sub-title">
+                        Write Here
+                    </h6>
+                    <h4 class="contact__title">
+                        Get In Touch
+                    </h4>
+                    <div class="contact__box">
+                        <div class="contact__item">
+                            <img class="contact__img" src="images/icons/address.svg" alt="address icon">
+                            <h5 class="contact__item-title">
+                                Address
+                            </h5>
+                            <p class="contact__address">
+                                2416 Mapleview Drive <br>Tampa, FL 33634
+                            </p>
+                        </div>
+                        <div class="contact__item">
+                            <img class="contact__img" src="images/icons/email.svg" alt="email icon">
+                            <h5 class="contact__item-title">
+                                Our Email
+                            </h5>
+                            <div class="contact__email">
+                                Main Email :
+                                <a class="contact__link" href="mailto:contact@website.com">contact@website.com</a>
+                            </div>
+                            <div class="contact__email">
+                                Inquiries :
+                                <a class="contact__link" href="mailto:Info@mail.com">Info@mail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <img class="contact__img" src="images/icons/phone.svg" alt="phone icon">
+                            <h5 class="contact__item-title">
+                                Our Phone
+                            </h5>
+                            <div class="contact__phone">
+                                Office Telephone :
+                                <a class="contact__link" href="tel:0029129102320">0029129102320</a>
+                            </div>
+                            <div class="contact__phone">
+                                Mobile :
+                                <a class="contact__link" href="tel:000232439493">000 2324 39493</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__wrapper">
+                        <form class="comment__form contact__form" action="#">
+                            <div class="comment__box">
+                                <div class="input-wrapper">
+                                    <input class="comment-input comment-input--contact" type="text" placeholder="Name"
+                                        required>
+                                    <img class="input-icon" src="images/icons/user.svg" alt="user icon">
+                                </div>
+                                <div class="input-wrapper">
+                                    <input class="comment-input comment-input--contact" type="email" placeholder="Email"
+                                        required>
+                                    <img class="input-icon" src="images/icons/letter.svg" alt="email icon">
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <textarea class="comment__textarea comment-input--contact" cols="30" rows="5"
+                                    placeholder="Comment"></textarea>
+                                <img class="input-icon" src="images/icons/comment.svg" alt="textarea icon">
+                            </div>
+                            <button class="comment__btn" type="submit">SEND MESSAGE</button>
+                        </form>
+                        <div class="contact__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221715.51340292703!2d-95.41713514959574!3d29.739887931473547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2z0KXigJnRjtGB0YLQvtC9LCDQotC10YXQsNGBLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1688585166381!5m2!1suk!2sua"
+                                width="500" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    {% include 'app/module/_articles/_articles.html' %}
+ 
+    {% include 'app/module/_partners/_partners.html' %}
+
+    {% include 'app/module/_footer/_footer.html' %}
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

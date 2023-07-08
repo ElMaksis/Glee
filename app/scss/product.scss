@@ -1,0 +1,22 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/rateyo/src/jquery.rateyo';
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler';
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme';
+@import 'global';
+@import '../module/_header/_header';
+@import '../module/_footer/_footer';
+@import '../module/_products/_products';
+@import '../module/_articles/_articles';
+@import '../module/_partners/_partners';
+
+
+
+
+
+
+@media (max-width: 1070px) {}
+
+@media (max-width: 660px) {}

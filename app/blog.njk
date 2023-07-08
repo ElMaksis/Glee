@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/blog.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+        <section class="top">
+            <h2 class="top__title">
+                Blog
+            </h2>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__dest" href="#">Blog</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <div class="blog__content">
+                        <button class="blog-one__btn"></button>
+                        <div class="content-item">
+                            <div class="content-item__box">
+                                <a class="content-item__link" href="#">
+                                    <img class="content-item__img" src="images/content/blog/post-1.jpg"
+                                        alt="post image">
+                                </a>
+                                <div class="content-item__caption">
+                                    <span>28 JANUARY, 2020</span>
+                                    <span>BY ADMIN</span>
+                                </div>
+                            </div>
+                            <h3 class="content-item__title">
+                                Fonsectetur adipisicing eiusmod
+                            </h3>
+                            <p class="content-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                            </p>
+                            <a class="content-item__link-btn" href="#">
+                                <span>View More</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-item__box">
+                                <a class="content-item__link" href="#">
+                                    <img class="content-item__img" src="images/content/blog/post-2.jpg"
+                                        alt="post image">
+                                </a>
+                                <div class="content-item__caption">
+                                    <span>28 JANUARY, 2020</span>
+                                    <span>BY ADMIN</span>
+                                </div>
+                            </div>
+                            <h3 class="content-item__title">
+                                Fonsectetur adipisicing elit
+                            </h3>
+                            <p class="content-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </p>
+                            <a class="content-item__link-btn" href="#">
+                                <span>View More</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-item__box">
+                                <a class="content-item__link" href="#">
+                                    <img class="content-item__img" src="images/content/blog/post-3.jpg"
+                                        alt="post image">
+                                </a>
+                                <div class="content-item__caption">
+                                    <span>28 JANUARY, 2020</span>
+                                    <span>BY ADMIN</span>
+                                </div>
+                            </div>
+                            <h3 class="content-item__title">
+                                Fsectetur adipisicing tempor incididunt
+                            </h3>
+                            <p class="content-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </p>
+                            <a class="content-item__link-btn" href="#">
+                                <span>View More</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-item__box">
+                                <a class="content-item__link" href="#">
+                                    <img class="content-item__img" src="images/content/blog/post-4.jpg"
+                                        alt="post image">
+                                </a>
+                                <div class="content-item__caption">
+                                    <span>28 JANUARY, 2020</span>
+                                    <span>BY ADMIN</span>
+                                </div>
+                            </div>
+                            <h3 class="content-item__title">
+                                vonsectetur adipisicing elit
+                            </h3>
+                            <p class="content-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </p>
+                            <a class="content-item__link-btn" href="#">
+                                <span>View More</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <aside class="blog__aside">
+
+                        {% include 'app/module/_blog-filter/_blog-filter.html' %}
+                    
+                    </aside>
+                </div>
+                <div class="pagination blog__pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a class="pagination__link pagination__link--active" href="#">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    {% include 'app/module/_footer/_footer.html' %}
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

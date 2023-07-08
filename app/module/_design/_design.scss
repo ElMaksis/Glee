@@ -1,0 +1,70 @@
+.design {
+
+    &__inner {
+        padding: 100px 0 120px;
+        // text-align: center;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+    }
+
+    &__box {
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        flex: 0 0 370px;
+        min-height: 245px;
+        text-align: left;
+        font-size: 20px;
+        padding: 35px;
+
+        &-1 {
+            background-image: url(../images/content/design/1.jpg);
+        }
+
+        &-2 {
+            background-image: url(../images/content/design/2.jpg);
+        }
+
+        &-3 {
+            background-image: url(../images/content/design/3.jpg);
+        }
+
+        &-4 {
+            background-image: url(../images/content/design/4.jpg);
+        }
+
+        &-5 {
+            background-image: url(../images/content/design/5.jpg);
+        }
+
+        &-6 {
+            background-image: url(../images/content/design/6.jpg);
+        }
+    }
+
+    .design-item__sub-title {
+        padding-bottom: 15px;
+    }
+
+    .design-item__style {
+        font-size: 16px;
+        color: #a9bfcb;
+    }
+}
+
+@media (max-width: 515px) {
+    .design__inner {
+        padding: 60px 0;
+    }
+
+    .design-item {
+        flex: 0 0 330px;
+    }
+}
