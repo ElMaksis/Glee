@@ -1,28 +1,5 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import '../../node_modules/rateyo/src/jquery.rateyo';
-@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
-@import 'global';
-@import '../module/_header/_header';
-@import '../module/_footer/_footer';
-@import '../module/_products/_products';
-@import '../module/_narrow-partners/_narrow-partners';
-
-
-
-.shop {
-    padding-top: 115px;
-
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__filters {
-        flex-basis: 290px;
-        padding-right: 20px;
-    }
+.content-item__box {
+    position: relative;
 }
 
 .blog-one__btn {
@@ -30,13 +7,15 @@
     height: 30px;
     padding: 10px;
     border: none;
+    background-color: transparent;
     background-image: url(../images/icons/filter.svg);
     position: fixed;
-    right: 70px;
-    top: 330px;
+    right: 50px;
+    bottom: 100px;
     z-index: 51;
     display: none;
 }
+
 
 .filter {
     &__item {
@@ -173,73 +152,91 @@
 }
 
 
+.blog__aside {
+    padding-left: 60px;
+    max-width: 340px;
+}
 
+.filter-search {
+    padding-right: 10px;
+    margin-bottom: 45px;
+    @extend %rubik-400;
 
-.pagination {
-    flex: 0 0 100%;
-    max-height: 270px;
-    padding: 90px 0 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__list {
-        display: flex;
+    &__form {
+        position: relative;
     }
 
-    &__link {
-        display: block;
-        width: 50px;
-        height: 50px;
-        margin: 0 7px;
-        border: 1px solid #a3bbc8;
-        line-height: 50px;
-        text-align: center;
-        @extend %rubik-400;
-        transition: all .2s;
+    &__input {
+        border: 1px solid #edf1f4;
+        padding: 0 15px;
+        width: calc(100% - 42px);
+        height: 42px;
+    }
 
-        &:hover {
-            border: 2px solid #a3bbc8;
-        }
-
-        &--active {
-            background-color: #a3bbc8;
-            color: #fff;
-        }
+    &__icon {
+        width: 42px;
+        height: 42px;
+        background-color: #edf1f4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
+.recent-post {
+    @extend %rubik-400;
+    margin-bottom: 45px;
+
+    &__img {
+        max-width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    &__desc {
+        padding-left: 18px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__date {
+        font-size: 12px;
+        line-height: 30px;
+        color: #a7a7a7;
+    }
+}
 
 @media (max-width: 950px) {
     .blog-one__btn {
         display: block;
     }
 
-    .filter {
+    .blog__aside {
         position: absolute;
         z-index: 50;
         background-color: #fff;
-        left: 0;
+        right: 0;
         top: -300%;
         transition: all .3s;
     }
 
-    .filter--active {
+    .blog__aside--active {
         top: 390px;
-        padding-left: 15px;
     }
 
-    .shop__content {
-        flex-basis: 100%;
-    }
-}
-
-@media (max-width: 515px) {
-    .title {
-        font-size: 28px;
-    }
-
-    .blog-one__btn {
-        right: 36px;
+    .filter-search {
+        padding-right: 10px;
     }
 }

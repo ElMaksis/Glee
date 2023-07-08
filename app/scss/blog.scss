@@ -4,10 +4,11 @@
 @import 'global';
 @import '../module/_header/_header';
 @import '../module/_footer/_footer';
+@import '../module/_blog-filter/_blog-filter';
 @import '../module/_narrow-partners/_narrow-partners';
 
 .blog {
-    padding: 120px 0;
+    padding-top: 120px;
 
     &__inner {
         display: flex;
@@ -249,5 +250,17 @@
             background-color: #a3bbc8;
             color: #fff;
         }
+    }
+}
+
+@media (max-width: 950px) {
+    .pagination {
+        padding: 40px 0 50px;
+    }
+}
+
+@media (max-width: 660px) {
+    .content-item__caption {
+        padding: 10px 20px;
     }
 }

@@ -68,12 +68,14 @@
     .articles__title {
         font-size: 26px;
     }
-}
 
-@media (max-width: 660px) {
     .articles__box {
         flex-direction: column;
         align-items: center;
+    }
+
+    .articles__item {
+        max-width: 500px;
     }
 }
 

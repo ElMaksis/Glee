@@ -30,6 +30,7 @@
     &__box {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         padding-bottom: 120px;
     }
 
@@ -64,6 +65,7 @@
         display: flex;
         justify-content: center;
         gap: 50px;
+        flex-wrap: wrap-reverse;
     }
 
     &__form {
