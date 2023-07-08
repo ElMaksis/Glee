@@ -7,22 +7,3 @@
 @import '../module/_top/_top';
 @import '../module/_log-in/_log-in';
 @import '../module/_narrow-partners/_narrow-partners';
-
-@media (max-width: 515px) {
-    .log-in {
-        padding-top: 70px;
-
-        &__form,
-        .register {
-            padding: 0 15px;
-        }
-
-        &__password {
-            margin: 10px 0;
-        }
-
-        &__input {
-            height: 50px;
-        }
-    }
-}
