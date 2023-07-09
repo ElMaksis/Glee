@@ -82,6 +82,10 @@
     .shop__content {
         flex-basis: 100%;
     }
+
+    .contact__item {
+        padding: 40px 30px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -223,6 +227,12 @@
     .terms__item {
         list-style-position: inside;
     }
+
+    .contact__map iframe {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 400px) {
@@ -232,5 +242,13 @@
 
     .experience__year {
         align-items: center;
+    }
+
+    .blog-one__img {
+        max-width: 275px;
+    }
+
+    .product-one__big-picture {
+        width: 275px;
     }
 }
